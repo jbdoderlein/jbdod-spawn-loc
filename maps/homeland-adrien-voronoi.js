@@ -7,7 +7,7 @@
 //  - "lumpy" landmass growth rules (Neighbors In Region, Near Neighbor, Cell Area, Near Region Seed,
 //    Near Plate Boundary)                                              -> gulfs, peninsulas, bays
 //  - Pangaea's coastal island placement and erosion rules
-//  - many coastal islands (40 slots for 5% of the map on Pangaea), scaled to each landmass.
+//  - more coastal islands than Continents (see COASTAL_ISLANDS / COASTAL_ISLANDS_SIZE).
 //    Distant island settings are untouched.
 // Inland seas are carved after the landmasses grow (see carveInlandSeas).
 import { buildContinentsSettings } from '/base-standard/scripts/voronoi_maps/continents.js';
