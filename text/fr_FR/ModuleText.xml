@@ -2,10 +2,10 @@
 <Database>
 	<LocalizedText>
 		<Row Tag="LOC_MODULE_JBDOD_SPAWN_LOC_NAME" Language="fr_FR">
-			<Text>Spawn Location</Text>
+			<Text>Novus Orbis</Text>
 		</Row>
 		<Row Tag="LOC_MODULE_JBDOD_SPAWN_LOC_DESCRIPTION" Language="fr_FR">
-			<Text>Ajoute l'option de carte « Placement des joueurs humains » (même continent, répartis sur les continents ou aléatoire) et deux types de carte « Terre natale » : un grand continent de départ et un continent plus petit à explorer.</Text>
+			<Text>L'Ancien et le Nouveau Monde : des types de carte où tous les joueurs commencent sur une grande Terre natale, avec des Terres lointaines plus petites et vides à découvrir à l'Ère de l'Exploration. Ajoute aussi l'option de carte « Placement des joueurs humains » (même continent, répartis sur les continents ou aléatoire).</Text>
 		</Row>
 	</LocalizedText>
 </Database>

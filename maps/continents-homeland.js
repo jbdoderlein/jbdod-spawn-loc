@@ -1,4 +1,4 @@
-// Continents (Homeland): based on base-standard/maps/continents.js.
+// Novus Orbis (Legacy): based on base-standard/maps/continents.js.
 // The Homeland gets the "Homeland share" map option of the land width, the Distant Lands the rest.
 import { assignAdvancedStartRegions } from '/base-standard/maps/assign-advanced-start-region.js';
 import { assignStartPositions } from '/base-standard/maps/assign-starting-plots.js';

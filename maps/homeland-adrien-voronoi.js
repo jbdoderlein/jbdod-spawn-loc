@@ -1,4 +1,4 @@
-// Homeland Adrien: the Homeland layout (see homeland-voronoi-common.js) with Adrien's "Mediterranean"
+// Novus Orbis - Mare Nostrum: the Homeland layout (see homeland-voronoi-common.js) with Adrien's "Mediterranean"
 // terrain, in the spirit of Pangaea: indented coasts, many coastal islands and inland seas.
 // Terrain settings and inland seas by Adrien (homeland-voronoi-map v2).
 //
@@ -174,7 +174,7 @@ class VoronoiHomelandAdrien extends withHomeland(UnifiedContinentsBase) {
     };
   }
   static getName() {
-    return "Homeland Adrien";
+    return "Novus Orbis - Mare Nostrum";
   }
   // Same initialization as the game's VoronoiContinents class.
   init(hexDims) {

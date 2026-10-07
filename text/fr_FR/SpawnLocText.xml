@@ -32,22 +32,22 @@
 			<Text>Les joueurs humains sont placés exactement comme les IA.</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_MAP_CONTINENTS_HOMELAND_NAME" Language="fr_FR">
-			<Text>Continents Terre natale (ancien)</Text>
+			<Text>Novus Orbis (ancienne version)</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_MAP_CONTINENTS_HOMELAND_DESCRIPTION" Language="fr_FR">
 			<Text>Une grande Terre natale et des Terres lointaines plus petites (voir l'option Part de la Terre natale). Les Terres lointaines n'accueillent des joueurs que s'il y en a plus que de places sur la Terre natale pour cette taille de carte : sur une petite carte à 4 joueurs, tout le monde commence sur la Terre natale.</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_MAP_CONTINENTS_HOMELAND_VORONOI_NAME" Language="fr_FR">
-			<Text>Continents et îles (Terre natale)</Text>
+			<Text>Novus Orbis</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_MAP_CONTINENTS_HOMELAND_VORONOI_DESCRIPTION" Language="fr_FR">
-			<Text>Une grande Terre natale où tous les joueurs commencent, et des Terres lointaines plus petites et vides à découvrir à l'Ère de l'Exploration, entourées d'îles de tailles variées.</Text>
+			<Text>L'Ancien et le Nouveau Monde : une grande Terre natale où tous les joueurs commencent, et des Terres lointaines plus petites et vides à découvrir à l'Ère de l'Exploration, entourées d'îles de tailles variées.</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_MAP_HOMELAND_ADRIEN_NAME" Language="fr_FR">
-			<Text>Terre natale Adrien</Text>
+			<Text>Novus Orbis – Mare Nostrum</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_MAP_HOMELAND_ADRIEN_DESCRIPTION" Language="fr_FR">
-			<Text>Comme Continents et îles (Terre natale), mais avec des continents plus riches dans l'esprit de la Pangée : côtes très découpées, nombreuses îles proches du rivage et mers intérieures façon Méditerranée. Terrain par Adrien.</Text>
+			<Text>Comme Novus Orbis, mais avec des continents plus riches dans l'esprit de la Pangée : côtes très découpées, nombreuses îles proches du rivage et mers intérieures façon Méditerranée. Terrain par Adrien.</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_HOMELAND_SHARE_NAME" Language="fr_FR">
 			<Text>Part de la Terre natale</Text>
@@ -65,7 +65,7 @@
 			<Text>Échelle de la carte</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_HOMELAND_MAP_SCALE_DESCRIPTION" Language="fr_FR">
-			<Text>Agrandit la carte pour faire de la place aux Terres lointaines : choisissez la taille de carte pour votre nombre de joueurs (Minuscule pour 4, Petite pour 6), puis agrandissez-la. Les terres, les océans et les continents suivent la même échelle.</Text>
+			<Text>Met la carte à l'échelle par rapport à la taille choisie : choisissez la taille de carte pour votre nombre de joueurs (Minuscule pour 4, Petite pour 6), puis agrandissez-la pour faire de la place aux Terres lointaines, ou réduisez-la pour une carte plus serrée. Les terres, les océans et les continents suivent la même échelle.</Text>
 		</Row>
 	</LocalizedText>
 </Database>

@@ -32,22 +32,22 @@
 			<Text>Human players are placed exactly like AI players.</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_MAP_CONTINENTS_HOMELAND_NAME">
-			<Text>Continents Homeland (Legacy)</Text>
+			<Text>Novus Orbis (Legacy)</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_MAP_CONTINENTS_HOMELAND_DESCRIPTION">
 			<Text>A large Homeland and smaller Distant Lands (see the Homeland Share option). The Distant Lands only get players if there are more than the map size's Homeland slots: on a Small map with 4 players, everyone starts on the Homeland.</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_MAP_CONTINENTS_HOMELAND_VORONOI_NAME">
-			<Text>Continents and Islands (Homeland)</Text>
+			<Text>Novus Orbis</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_MAP_CONTINENTS_HOMELAND_VORONOI_DESCRIPTION">
-			<Text>A large Homeland where every player starts, and smaller empty Distant Lands to discover in the Exploration Age, accompanied by islands of varying size.</Text>
+			<Text>The Old World and the New: a large Homeland where every player starts, and smaller empty Distant Lands to discover in the Exploration Age, accompanied by islands of varying size.</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_MAP_HOMELAND_ADRIEN_NAME">
-			<Text>Homeland Adrien</Text>
+			<Text>Novus Orbis – Mare Nostrum</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_MAP_HOMELAND_ADRIEN_DESCRIPTION">
-			<Text>Like Continents and Islands (Homeland), but with richer continents in the spirit of Pangaea: deeply indented coasts, many islands close to shore and Mediterranean-like inland seas. Terrain by Adrien.</Text>
+			<Text>Like Novus Orbis, but with richer continents in the spirit of Pangaea: deeply indented coasts, many islands close to shore and Mediterranean-like inland seas. Terrain by Adrien.</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_HOMELAND_SHARE_NAME">
 			<Text>Homeland Share</Text>
@@ -65,7 +65,7 @@
 			<Text>Map Scale</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_HOMELAND_MAP_SCALE_DESCRIPTION">
-			<Text>Enlarges the map to make room for the Distant Lands: pick the map size for your number of players (Tiny for 4, Small for 6), then scale it up. Land, oceans and continents scale with it.</Text>
+			<Text>Scales the map relative to the chosen map size: pick the map size for your number of players (Tiny for 4, Small for 6), then scale it up to make room for the Distant Lands, or down for a tighter map. Land, oceans and continents scale with it.</Text>
 		</Row>
 	</EnglishText>
 </Database>

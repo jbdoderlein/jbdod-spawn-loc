@@ -2,10 +2,10 @@
 <Database>
 	<EnglishText>
 		<Row Tag="LOC_MODULE_JBDOD_SPAWN_LOC_NAME">
-			<Text>Spawn Location</Text>
+			<Text>Novus Orbis</Text>
 		</Row>
 		<Row Tag="LOC_MODULE_JBDOD_SPAWN_LOC_DESCRIPTION">
-			<Text>Adds a "Human Start Placement" map option (same continent, split across continents, or random) and two "Homeland" map types: a large starting continent and a smaller one to explore.</Text>
+			<Text>The Old World and the New: map types where every player starts on a large Homeland, with smaller empty Distant Lands to discover in the Exploration Age. Also adds a "Human Start Placement" map option (same continent, split across continents, or random).</Text>
 		</Row>
 	</EnglishText>
 </Database>
