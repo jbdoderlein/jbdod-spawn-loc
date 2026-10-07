@@ -11,11 +11,11 @@ import { RandomImpl } from '/base-standard/scripts/random-pcg-32.js';
 import { RegionType } from '/base-standard/scripts/voronoi-types.js';
 
 // The Homeland's share of the total land.
-const g_HomelandShare = 2 / 3;
+const g_HomelandShare = 0.7;
 // Ocean gap between the two landmasses, as a fraction of the map width.
 const g_LandmassGap = 0.06;
 // Grid size relative to the chosen map size, in each direction (Small: 74x46 -> 68x42).
-const g_MapScale = 0.92;
+const g_MapScale = 0.90;
 
 // Shrinks the map grid before the map is created. Sizes are kept even.
 function requestHomelandMapData(initParams) {
