@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<LocalizedText>
+		<Row Tag="LOC_SPAWN_LOC_HUMAN_START_PLACEMENT_NAME" Language="fr_FR">
+			<Text>Placement des joueurs humains</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HUMAN_START_PLACEMENT_DESCRIPTION" Language="fr_FR">
+			<Text>Choisissez sur quel continent commencent les joueurs humains.</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HUMAN_START_PLACEMENT_DEFAULT_NAME" Language="fr_FR">
+			<Text>Par défaut</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HUMAN_START_PLACEMENT_DEFAULT_DESCRIPTION" Language="fr_FR">
+			<Text>Comportement du jeu de base : les humains partagent la Terre natale seulement s'ils y tiennent tous, sinon ils sont répartis au hasard.</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HUMAN_START_PLACEMENT_SAME_CONTINENT_NAME" Language="fr_FR">
+			<Text>Même continent</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HUMAN_START_PLACEMENT_SAME_CONTINENT_DESCRIPTION" Language="fr_FR">
+			<Text>Tous les joueurs humains commencent sur le même continent. Si nécessaire, des joueurs sont déplacés de l'autre continent pour faire de la place.</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HUMAN_START_PLACEMENT_SPLIT_NAME" Language="fr_FR">
+			<Text>Répartis sur les continents</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HUMAN_START_PLACEMENT_SPLIT_DESCRIPTION" Language="fr_FR">
+			<Text>Les joueurs humains sont répartis aussi équitablement que possible entre les continents.</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HUMAN_START_PLACEMENT_IGNORE_NAME" Language="fr_FR">
+			<Text>Aléatoire</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HUMAN_START_PLACEMENT_IGNORE_DESCRIPTION" Language="fr_FR">
+			<Text>Les joueurs humains sont placés exactement comme les IA.</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_MAP_CONTINENTS_HOMELAND_NAME" Language="fr_FR">
+			<Text>Continents Terre natale (ancien)</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_MAP_CONTINENTS_HOMELAND_DESCRIPTION" Language="fr_FR">
+			<Text>Une grande Terre natale (deux tiers des terres) et des Terres lointaines plus petites (un tiers). Les Terres lointaines n'accueillent des joueurs que s'il y en a plus que de places sur la Terre natale pour cette taille de carte : sur une petite carte à 4 joueurs, tout le monde commence sur la Terre natale.</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_MAP_CONTINENTS_HOMELAND_VORONOI_NAME" Language="fr_FR">
+			<Text>Continents et îles (Terre natale)</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_MAP_CONTINENTS_HOMELAND_VORONOI_DESCRIPTION" Language="fr_FR">
+			<Text>Une grande Terre natale (deux tiers des terres) où tous les joueurs commencent, et des Terres lointaines plus petites et vides (un tiers) à découvrir à l'Ère de l'Exploration, entourées d'îles de tailles variées.</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_MAP_HOMELAND_ADRIEN_NAME" Language="fr_FR">
+			<Text>Terre natale Adrien</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_MAP_HOMELAND_ADRIEN_DESCRIPTION" Language="fr_FR">
+			<Text>Comme Continents et îles (Terre natale), mais avec des continents plus riches dans l'esprit de la Pangée : côtes très découpées, nombreuses îles proches du rivage et mers intérieures façon Méditerranée. Terrain par Adrien.</Text>
+		</Row>
+	</LocalizedText>
+</Database>

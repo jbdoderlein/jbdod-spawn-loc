@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+		<Row Tag="LOC_MODULE_JBDOD_SPAWN_LOC_NAME">
+			<Text>Spawn Location</Text>
+		</Row>
+		<Row Tag="LOC_MODULE_JBDOD_SPAWN_LOC_DESCRIPTION">
+			<Text>Adds a "Human Start Placement" map option (same continent, split across continents, or random) and two "Homeland" map types: a large starting continent and a smaller one to explore.</Text>
+		</Row>
+	</EnglishText>
+</Database>

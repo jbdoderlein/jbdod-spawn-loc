@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<LocalizedText>
+		<Row Tag="LOC_MODULE_JBDOD_SPAWN_LOC_NAME" Language="fr_FR">
+			<Text>Spawn Location</Text>
+		</Row>
+		<Row Tag="LOC_MODULE_JBDOD_SPAWN_LOC_DESCRIPTION" Language="fr_FR">
+			<Text>Ajoute l'option de carte « Placement des joueurs humains » (même continent, répartis sur les continents ou aléatoire) et deux types de carte « Terre natale » : un grand continent de départ et un continent plus petit à explorer.</Text>
+		</Row>
+	</LocalizedText>
+</Database>

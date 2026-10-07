@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+		<Row Tag="LOC_SPAWN_LOC_HUMAN_START_PLACEMENT_NAME">
+			<Text>Human Start Placement</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HUMAN_START_PLACEMENT_DESCRIPTION">
+			<Text>Choose which continent human players start on.</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HUMAN_START_PLACEMENT_DEFAULT_NAME">
+			<Text>Game Default</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HUMAN_START_PLACEMENT_DEFAULT_DESCRIPTION">
+			<Text>Unmodified game behavior: humans share the Homelands only when they all fit, otherwise they are spread randomly.</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HUMAN_START_PLACEMENT_SAME_CONTINENT_NAME">
+			<Text>Same Continent</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HUMAN_START_PLACEMENT_SAME_CONTINENT_DESCRIPTION">
+			<Text>All human players start on the same continent. If needed, players are moved from the other continent to make room.</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HUMAN_START_PLACEMENT_SPLIT_NAME">
+			<Text>Split Across Continents</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HUMAN_START_PLACEMENT_SPLIT_DESCRIPTION">
+			<Text>Human players are spread as evenly as possible across the continents.</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HUMAN_START_PLACEMENT_IGNORE_NAME">
+			<Text>Random</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HUMAN_START_PLACEMENT_IGNORE_DESCRIPTION">
+			<Text>Human players are placed exactly like AI players.</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_MAP_CONTINENTS_HOMELAND_NAME">
+			<Text>Continents Homeland (Legacy)</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_MAP_CONTINENTS_HOMELAND_DESCRIPTION">
+			<Text>A large Homeland (two thirds of the land) and smaller Distant Lands (one third). The Distant Lands only get players if there are more than the map size's Homeland slots: on a Small map with 4 players, everyone starts on the Homeland.</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_MAP_CONTINENTS_HOMELAND_VORONOI_NAME">
+			<Text>Continents and Islands (Homeland)</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_MAP_CONTINENTS_HOMELAND_VORONOI_DESCRIPTION">
+			<Text>A large Homeland (two thirds of the land) where every player starts, and smaller empty Distant Lands (one third) to discover in the Exploration Age, accompanied by islands of varying size.</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_MAP_HOMELAND_ADRIEN_NAME">
+			<Text>Homeland Adrien</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_MAP_HOMELAND_ADRIEN_DESCRIPTION">
+			<Text>Like Continents and Islands (Homeland), but with richer continents in the spirit of Pangaea: deeply indented coasts, many islands close to shore and Mediterranean-like inland seas. Terrain by Adrien.</Text>
+		</Row>
+	</EnglishText>
+</Database>
