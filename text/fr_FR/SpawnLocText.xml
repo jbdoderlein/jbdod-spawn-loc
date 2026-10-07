@@ -65,7 +65,7 @@
 			<Text>Échelle de la carte</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_HOMELAND_MAP_SCALE_DESCRIPTION" Language="fr_FR">
-			<Text>Largeur et hauteur de la carte par rapport à la taille choisie. Les terres, les océans et les continents suivent la même échelle.</Text>
+			<Text>Agrandit la carte pour faire de la place aux Terres lointaines : choisissez la taille de carte pour votre nombre de joueurs (Minuscule pour 4, Petite pour 6), puis agrandissez-la. Les terres, les océans et les continents suivent la même échelle.</Text>
 		</Row>
 	</LocalizedText>
 </Database>

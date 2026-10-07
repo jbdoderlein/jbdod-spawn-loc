@@ -15,8 +15,8 @@ import { RegionType } from '/base-standard/scripts/voronoi-types.js';
 const getHomelandShare = () => getMapPercent("HomelandShare", 0.73);
 // Ocean gap between the two landmasses, as a fraction of the map width.
 const getLandmassGap = () => getMapPercent("HomelandLandmassGap", 0.06);
-// Grid size relative to the chosen map size, in each direction (0.87: Small 74x46 -> 64x40).
-const getMapScale = () => getMapPercent("HomelandMapScale", 0.87);
+// Grid enlargement of the chosen map size, in each direction (1.10: Tiny 60x38 -> 66x42).
+const getMapScale = () => getMapPercent("HomelandMapScale", 1.10);
 
 function getMapPercent(key, fallback) {
   // Configuration may not exist yet when the map grid is requested; use the default then.
@@ -25,7 +25,7 @@ function getMapPercent(key, fallback) {
   return Number.isFinite(value) && value > 0 ? value / 100 : fallback;
 }
 
-// Shrinks the map grid before the map is created. Sizes are kept even.
+// Scales the map grid before the map is created. Sizes are kept even.
 function requestHomelandMapData(initParams) {
   const mapScale = getMapScale();
   const scaled = (n) => 2 * Math.round(n * mapScale / 2);

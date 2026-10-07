@@ -65,7 +65,7 @@
 			<Text>Map Scale</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_HOMELAND_MAP_SCALE_DESCRIPTION">
-			<Text>Width and height of the map relative to the chosen map size. Land, oceans and continents scale with it.</Text>
+			<Text>Enlarges the map to make room for the Distant Lands: pick the map size for your number of players (Tiny for 4, Small for 6), then scale it up. Land, oceans and continents scale with it.</Text>
 		</Row>
 	</EnglishText>
 </Database>

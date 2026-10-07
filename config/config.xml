@@ -9,9 +9,9 @@
 		<Row Key1="Map" Key2="{jbdod-spawn-loc}maps/continents-homeland.js" ParameterID="HomelandShare" Name="LOC_SPAWN_LOC_HOMELAND_SHARE_NAME" Description="LOC_SPAWN_LOC_HOMELAND_SHARE_DESCRIPTION" Domain="HomelandShares" DefaultValue="73" Hash="0" ConfigurationGroup="Map" ConfigurationKey="HomelandShare" GroupId="MapOptions" SortIndex="1060" />
 		<Row Key1="Map" Key2="{jbdod-spawn-loc}maps/continents-homeland-voronoi.js" ParameterID="HomelandLandmassGap" Name="LOC_SPAWN_LOC_HOMELAND_LANDMASS_GAP_NAME" Description="LOC_SPAWN_LOC_HOMELAND_LANDMASS_GAP_DESCRIPTION" Domain="HomelandLandmassGaps" DefaultValue="6" Hash="0" ConfigurationGroup="Map" ConfigurationKey="HomelandLandmassGap" GroupId="MapOptions" SortIndex="1065" />
 		<Row Key1="Map" Key2="{jbdod-spawn-loc}maps/homeland-adrien-voronoi.js" ParameterID="HomelandLandmassGap" Name="LOC_SPAWN_LOC_HOMELAND_LANDMASS_GAP_NAME" Description="LOC_SPAWN_LOC_HOMELAND_LANDMASS_GAP_DESCRIPTION" Domain="HomelandLandmassGaps" DefaultValue="6" Hash="0" ConfigurationGroup="Map" ConfigurationKey="HomelandLandmassGap" GroupId="MapOptions" SortIndex="1065" />
-		<Row Key1="Map" Key2="{jbdod-spawn-loc}maps/continents-homeland-voronoi.js" ParameterID="HomelandMapScale" Name="LOC_SPAWN_LOC_HOMELAND_MAP_SCALE_NAME" Description="LOC_SPAWN_LOC_HOMELAND_MAP_SCALE_DESCRIPTION" Domain="HomelandMapScales" DefaultValue="87" Hash="0" ConfigurationGroup="Map" ConfigurationKey="HomelandMapScale" GroupId="MapOptions" SortIndex="1070" />
-		<Row Key1="Map" Key2="{jbdod-spawn-loc}maps/homeland-adrien-voronoi.js" ParameterID="HomelandMapScale" Name="LOC_SPAWN_LOC_HOMELAND_MAP_SCALE_NAME" Description="LOC_SPAWN_LOC_HOMELAND_MAP_SCALE_DESCRIPTION" Domain="HomelandMapScales" DefaultValue="87" Hash="0" ConfigurationGroup="Map" ConfigurationKey="HomelandMapScale" GroupId="MapOptions" SortIndex="1070" />
-		<Row Key1="Map" Key2="{jbdod-spawn-loc}maps/continents-homeland.js" ParameterID="HomelandMapScale" Name="LOC_SPAWN_LOC_HOMELAND_MAP_SCALE_NAME" Description="LOC_SPAWN_LOC_HOMELAND_MAP_SCALE_DESCRIPTION" Domain="HomelandMapScales" DefaultValue="87" Hash="0" ConfigurationGroup="Map" ConfigurationKey="HomelandMapScale" GroupId="MapOptions" SortIndex="1070" />
+		<Row Key1="Map" Key2="{jbdod-spawn-loc}maps/continents-homeland-voronoi.js" ParameterID="HomelandMapScale" Name="LOC_SPAWN_LOC_HOMELAND_MAP_SCALE_NAME" Description="LOC_SPAWN_LOC_HOMELAND_MAP_SCALE_DESCRIPTION" Domain="HomelandMapScales" DefaultValue="110" Hash="0" ConfigurationGroup="Map" ConfigurationKey="HomelandMapScale" GroupId="MapOptions" SortIndex="1070" />
+		<Row Key1="Map" Key2="{jbdod-spawn-loc}maps/homeland-adrien-voronoi.js" ParameterID="HomelandMapScale" Name="LOC_SPAWN_LOC_HOMELAND_MAP_SCALE_NAME" Description="LOC_SPAWN_LOC_HOMELAND_MAP_SCALE_DESCRIPTION" Domain="HomelandMapScales" DefaultValue="110" Hash="0" ConfigurationGroup="Map" ConfigurationKey="HomelandMapScale" GroupId="MapOptions" SortIndex="1070" />
+		<Row Key1="Map" Key2="{jbdod-spawn-loc}maps/continents-homeland.js" ParameterID="HomelandMapScale" Name="LOC_SPAWN_LOC_HOMELAND_MAP_SCALE_NAME" Description="LOC_SPAWN_LOC_HOMELAND_MAP_SCALE_DESCRIPTION" Domain="HomelandMapScales" DefaultValue="110" Hash="0" ConfigurationGroup="Map" ConfigurationKey="HomelandMapScale" GroupId="MapOptions" SortIndex="1070" />
 		<Row ParameterID="HumanStartPlacement" Name="LOC_SPAWN_LOC_HUMAN_START_PLACEMENT_NAME" Description="LOC_SPAWN_LOC_HUMAN_START_PLACEMENT_DESCRIPTION" Domain="HumanStartPlacements" DefaultValue="HUMAN_START_PLACEMENT_SAME_CONTINENT" Hash="1" ConfigurationGroup="Map" ConfigurationKey="HumanStartPlacement" GroupId="MapOptions" ChangeableAfterGameStart="0" ChangeableAfterAgeTransition="0" SortIndex="125" />
 	</Parameters>
 	<DomainValues>
@@ -30,12 +30,13 @@
 		<Row Domain="HomelandLandmassGaps" Value="6" Name="6%" SortIndex="20" />
 		<Row Domain="HomelandLandmassGaps" Value="8" Name="8%" SortIndex="30" />
 		<Row Domain="HomelandLandmassGaps" Value="10" Name="10%" SortIndex="40" />
-		<Row Domain="HomelandMapScales" Value="80" Name="80%" SortIndex="10" />
-		<Row Domain="HomelandMapScales" Value="85" Name="85%" SortIndex="20" />
-		<Row Domain="HomelandMapScales" Value="87" Name="87%" SortIndex="30" />
-		<Row Domain="HomelandMapScales" Value="90" Name="90%" SortIndex="40" />
-		<Row Domain="HomelandMapScales" Value="95" Name="95%" SortIndex="50" />
-		<Row Domain="HomelandMapScales" Value="100" Name="100%" SortIndex="60" />
+		<Row Domain="HomelandMapScales" Value="100" Name="100%" SortIndex="10" />
+		<Row Domain="HomelandMapScales" Value="105" Name="105%" SortIndex="20" />
+		<Row Domain="HomelandMapScales" Value="110" Name="110%" SortIndex="30" />
+		<Row Domain="HomelandMapScales" Value="115" Name="115%" SortIndex="40" />
+		<Row Domain="HomelandMapScales" Value="120" Name="120%" SortIndex="50" />
+		<Row Domain="HomelandMapScales" Value="125" Name="125%" SortIndex="60" />
+		<Row Domain="HomelandMapScales" Value="130" Name="130%" SortIndex="70" />
 	</DomainValues>
 	<Maps>
 		<Row File="{jbdod-spawn-loc}maps/continents-homeland-voronoi.js" Name="LOC_SPAWN_LOC_MAP_CONTINENTS_HOMELAND_VORONOI_NAME" Description="LOC_SPAWN_LOC_MAP_CONTINENTS_HOMELAND_VORONOI_DESCRIPTION" SortIndex="1" />
