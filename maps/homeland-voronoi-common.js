@@ -1,4 +1,4 @@
-// Shared code for the Voronoi Homeland map types: one Homeland landmass hosting every player
+// Shared code for the Homeland map types: one Homeland landmass hosting every player
 // (2/3 of the land) and one empty Distant Lands landmass (1/3 of the land), side by side.
 import { assignAdvancedStartRegions } from '/base-standard/maps/assign-advanced-start-region.js';
 import { assignStartPositionsFromHexMap } from '/base-standard/maps/assign-starting-plots.js';
@@ -14,6 +14,17 @@ import { RegionType } from '/base-standard/scripts/voronoi-types.js';
 const g_HomelandShare = 2 / 3;
 // Ocean gap between the two landmasses, as a fraction of the map width.
 const g_LandmassGap = 0.06;
+// Grid size relative to the chosen map size, in each direction (Small: 74x46 -> 68x42).
+const g_MapScale = 0.92;
+
+// Shrinks the map grid before the map is created. Sizes are kept even.
+function requestHomelandMapData(initParams) {
+  const scaled = (n) => 2 * Math.round(n * g_MapScale / 2);
+  console.log(`Homeland map grid: ${initParams.width}x${initParams.height} -> ${scaled(initParams.width)}x${scaled(initParams.height)}`);
+  initParams.width = scaled(initParams.width);
+  initParams.height = scaled(initParams.height);
+  engine.call("SetMapInitData", initParams);
+}
 
 // Adds Homeland placement to a UnifiedContinentsBase subclass.
 const withHomeland = (Base) => class extends Base {
@@ -95,4 +106,4 @@ function generateHomelandMap(voronoiMap) {
   voronoiScope.end();
 }
 
-export { withHomeland, generateHomelandMap };
+export { withHomeland, generateHomelandMap, requestHomelandMapData };

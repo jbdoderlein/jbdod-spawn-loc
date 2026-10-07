@@ -12,14 +12,12 @@ import { addNaturalWonders } from '/base-standard/maps/natural-wonder-generator.
 import { generateResources } from '/base-standard/maps/resource-generator.js';
 import { generateSnow, dumpPermanentSnow } from '/base-standard/maps/snow-generator.js';
 import { addVolcanoes, addTundraVolcanoes } from '/base-standard/maps/volcano-generator.js';
+import { requestHomelandMapData } from './homeland-voronoi-common.js';
 
 // The Homeland's share of the land width.
 const g_HomelandShare = 2 / 3;
 
 console.log("Generating using script Continents-Homeland");
-function requestMapData(initParams) {
-  engine.call("SetMapInitData", initParams);
-}
 function generateMap() {
   console.log(`Age - ${GameInfo.Ages.lookup(Game.age).AgeType}`);
   const iWidth = GameplayMap.getGridWidth();
@@ -95,7 +93,7 @@ function generateMap() {
   FertilityBuilder.recalculate();
   assignAdvancedStartRegions();
 }
-engine.on("RequestMapInitData", requestMapData);
+engine.on("RequestMapInitData", requestHomelandMapData);
 engine.on("GenerateMap", generateMap);
 console.log("Loaded Continents-Homeland");
 

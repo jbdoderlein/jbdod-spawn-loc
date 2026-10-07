@@ -16,20 +16,20 @@ import { voronoiMapSchema } from '/base-standard/scripts/voronoi_maps/map-common
 import continentSettings from '/base-standard/scripts/voronoi_data/continents.mapconfig.js';
 import pangaeaSettings from '/base-standard/scripts/voronoi_data/pangaea.mapconfig.js';
 import { RandomImpl } from '/base-standard/scripts/random-pcg-32.js';
-import { withHomeland, generateHomelandMap } from './homeland-voronoi-common.js';
+import { withHomeland, generateHomelandMap, requestHomelandMapData } from './homeland-voronoi-common.js';
 
 const PANGAEA_LANDMASS_RULE_PREFIXES = [
   "Cell Area.", "Near Neighbor.", "Near Region Seed.", "Neighbors In Region.", "Near Plate Boundary."
 ];
 const INLAND_SEAS = {
-  fractions: [0.08, 0.03], // sea sizes, as a share of each landmass's cells (first = main sea)
+  fractions: [0.08],       // one entry per sea: its size as a share of each landmass's cells
   minDepth: 4,             // a sea's center must be at least N cells from any water
   rim: 2,                  // width of land kept around the sea (cells)
   minCells: 6,             // smaller seas are not carved
   stretchX: 0.5,           // < 1 stretches the sea west-east (like the Mediterranean), 1 = round
   connectToOcean: true     // narrow strait to the ocean (otherwise a closed sea that ships cannot leave)
 };
-const LAND_COMPENSATION = 1.08; // slightly larger landmasses to make up for land lost to inland seas
+const LAND_COMPENSATION = 1.06; // slightly larger landmasses to make up for land lost to inland seas
 const EROSION_PERCENT = 6; // coastal erosion of each landmass (Continents: 4, Pangaea and generator default: 8)
 const COASTAL_ISLANDS = 15; // coastal island spawn locations per landmass (Continents: 10, Pangaea: 40)
 const COASTAL_ISLANDS_SIZE = 1.5; // coastal island land per landmass, % of the map (Continents: 0.85, Pangaea: 5)
@@ -196,12 +196,9 @@ class VoronoiHomelandAdrien extends withHomeland(UnifiedContinentsBase) {
 }
 
 console.log("Generating using script Homeland-Adrien-Voronoi");
-function requestMapData(initParams) {
-  engine.call("SetMapInitData", initParams);
-}
 function generateMap() {
   generateHomelandMap(new VoronoiHomelandAdrien());
 }
-engine.on("RequestMapInitData", requestMapData);
+engine.on("RequestMapInitData", requestHomelandMapData);
 engine.on("GenerateMap", generateMap);
 console.log("Loaded Homeland-Adrien-Voronoi");
