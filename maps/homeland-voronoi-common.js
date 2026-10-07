@@ -16,7 +16,7 @@ const getHomelandShare = () => getMapPercent("HomelandShare", 0.75);
 // Ocean gap between the two landmasses, as a fraction of the map width.
 const getLandmassGap = () => getMapPercent("HomelandLandmassGap", 0.06);
 // Grid scale of the chosen map size, in each direction (1.10: Tiny 60x38 -> 66x42).
-const getMapScale = () => getMapPercent("HomelandMapScale", 1.25);
+const getMapScale = () => getMapPercent("HomelandMapScale", 1.15);
 
 function getMapPercent(key, fallback) {
   // Configuration may not exist yet when the map grid is requested; use the default then.
