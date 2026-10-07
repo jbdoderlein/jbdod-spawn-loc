@@ -1,5 +1,5 @@
 // Continents (Homeland): based on base-standard/maps/continents.js.
-// The Homeland gets 2/3 of the land width and the Distant Lands 1/3.
+// The Homeland gets the "Homeland share" map option of the land width, the Distant Lands the rest.
 import { assignAdvancedStartRegions } from '/base-standard/maps/assign-advanced-start-region.js';
 import { assignStartPositions } from '/base-standard/maps/assign-starting-plots.js';
 import { generateDiscoveries } from '/base-standard/maps/discovery-generator.js';
@@ -12,10 +12,7 @@ import { addNaturalWonders } from '/base-standard/maps/natural-wonder-generator.
 import { generateResources } from '/base-standard/maps/resource-generator.js';
 import { generateSnow, dumpPermanentSnow } from '/base-standard/maps/snow-generator.js';
 import { addVolcanoes, addTundraVolcanoes } from '/base-standard/maps/volcano-generator.js';
-import { requestHomelandMapData } from './homeland-voronoi-common.js';
-
-// The Homeland's share of the land width.
-const g_HomelandShare = 2 / 3;
+import { requestHomelandMapData, getHomelandShare } from './homeland-voronoi-common.js';
 
 console.log("Generating using script Continents-Homeland");
 function generateMap() {
@@ -33,7 +30,7 @@ function generateMap() {
   console.log(`Homeland: ${iNumHomeland} players, ${bHomelandWest ? "west" : "east"}. Distant Lands: ${iNumDistant} players.`);
   // One ocean band around the map seam and one between the continents.
   const iLandColumns = iWidth - 2 * g_OceanWaterColumns;
-  const iHomelandColumns = Math.round(iLandColumns * g_HomelandShare);
+  const iHomelandColumns = Math.round(iLandColumns * getHomelandShare());
   const iWestColumns = bHomelandWest ? iHomelandColumns : iLandColumns - iHomelandColumns;
   const westContinent = {
     west: g_OceanWaterColumns / 2,

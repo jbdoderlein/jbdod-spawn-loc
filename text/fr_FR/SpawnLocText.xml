@@ -35,19 +35,37 @@
 			<Text>Continents Terre natale (ancien)</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_MAP_CONTINENTS_HOMELAND_DESCRIPTION" Language="fr_FR">
-			<Text>Une grande Terre natale (deux tiers des terres) et des Terres lointaines plus petites (un tiers). Les Terres lointaines n'accueillent des joueurs que s'il y en a plus que de places sur la Terre natale pour cette taille de carte : sur une petite carte à 4 joueurs, tout le monde commence sur la Terre natale.</Text>
+			<Text>Une grande Terre natale et des Terres lointaines plus petites (voir l'option Part de la Terre natale). Les Terres lointaines n'accueillent des joueurs que s'il y en a plus que de places sur la Terre natale pour cette taille de carte : sur une petite carte à 4 joueurs, tout le monde commence sur la Terre natale.</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_MAP_CONTINENTS_HOMELAND_VORONOI_NAME" Language="fr_FR">
 			<Text>Continents et îles (Terre natale)</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_MAP_CONTINENTS_HOMELAND_VORONOI_DESCRIPTION" Language="fr_FR">
-			<Text>Une grande Terre natale (deux tiers des terres) où tous les joueurs commencent, et des Terres lointaines plus petites et vides (un tiers) à découvrir à l'Ère de l'Exploration, entourées d'îles de tailles variées.</Text>
+			<Text>Une grande Terre natale où tous les joueurs commencent, et des Terres lointaines plus petites et vides à découvrir à l'Ère de l'Exploration, entourées d'îles de tailles variées.</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_MAP_HOMELAND_ADRIEN_NAME" Language="fr_FR">
 			<Text>Terre natale Adrien</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_MAP_HOMELAND_ADRIEN_DESCRIPTION" Language="fr_FR">
 			<Text>Comme Continents et îles (Terre natale), mais avec des continents plus riches dans l'esprit de la Pangée : côtes très découpées, nombreuses îles proches du rivage et mers intérieures façon Méditerranée. Terrain par Adrien.</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HOMELAND_SHARE_NAME" Language="fr_FR">
+			<Text>Part de la Terre natale</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HOMELAND_SHARE_DESCRIPTION" Language="fr_FR">
+			<Text>Part des terres attribuée à la Terre natale, où tous les joueurs commencent. Les Terres lointaines reçoivent le reste.</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HOMELAND_LANDMASS_GAP_NAME" Language="fr_FR">
+			<Text>Océan entre les continents</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HOMELAND_LANDMASS_GAP_DESCRIPTION" Language="fr_FR">
+			<Text>Largeur de l'océan entre la Terre natale et les Terres lointaines, en part de la largeur de la carte.</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HOMELAND_MAP_SCALE_NAME" Language="fr_FR">
+			<Text>Échelle de la carte</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HOMELAND_MAP_SCALE_DESCRIPTION" Language="fr_FR">
+			<Text>Largeur et hauteur de la carte par rapport à la taille choisie. Les terres, les océans et les continents suivent la même échelle.</Text>
 		</Row>
 	</LocalizedText>
 </Database>

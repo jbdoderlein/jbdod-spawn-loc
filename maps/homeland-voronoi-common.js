@@ -1,5 +1,5 @@
-// Shared code for the Homeland map types: one Homeland landmass hosting every player
-// (2/3 of the land) and one empty Distant Lands landmass (1/3 of the land), side by side.
+// Shared code for the Homeland map types: one Homeland landmass hosting every player and one
+// empty Distant Lands landmass, side by side.
 import { assignAdvancedStartRegions } from '/base-standard/maps/assign-advanced-start-region.js';
 import { assignStartPositionsFromHexMap } from '/base-standard/maps/assign-starting-plots.js';
 import { generateDiscoveries } from '/base-standard/maps/discovery-generator.js';
@@ -10,16 +10,25 @@ import { PlayerRegion } from '/base-standard/scripts/player-areas.js';
 import { RandomImpl } from '/base-standard/scripts/random-pcg-32.js';
 import { RegionType } from '/base-standard/scripts/voronoi-types.js';
 
+// Map setup options (config/config.xml), as percentages; the defaults are used when an option is missing.
 // The Homeland's share of the total land.
-const g_HomelandShare = 0.7;
+const getHomelandShare = () => getMapPercent("HomelandShare", 0.73);
 // Ocean gap between the two landmasses, as a fraction of the map width.
-const g_LandmassGap = 0.06;
-// Grid size relative to the chosen map size, in each direction (Small: 74x46 -> 68x42).
-const g_MapScale = 0.90;
+const getLandmassGap = () => getMapPercent("HomelandLandmassGap", 0.06);
+// Grid size relative to the chosen map size, in each direction (0.87: Small 74x46 -> 64x40).
+const getMapScale = () => getMapPercent("HomelandMapScale", 0.87);
+
+function getMapPercent(key, fallback) {
+  // Configuration may not exist yet when the map grid is requested; use the default then.
+  if (typeof Configuration == "undefined") return fallback;
+  const value = Number(Configuration.getMapValue(key));
+  return Number.isFinite(value) && value > 0 ? value / 100 : fallback;
+}
 
 // Shrinks the map grid before the map is created. Sizes are kept even.
 function requestHomelandMapData(initParams) {
-  const scaled = (n) => 2 * Math.round(n * g_MapScale / 2);
+  const mapScale = getMapScale();
+  const scaled = (n) => 2 * Math.round(n * mapScale / 2);
   console.log(`Homeland map grid: ${initParams.width}x${initParams.height} -> ${scaled(initParams.width)}x${scaled(initParams.height)}`);
   initParams.width = scaled(initParams.width);
   initParams.height = scaled(initParams.height);
@@ -32,11 +41,13 @@ const withHomeland = (Base) => class extends Base {
   // keeping the same total land as settings.totalLandmassSize.
   placeHomeland(settings) {
     const totalSize = settings.totalLandmassSize;
+    const homelandShare = getHomelandShare();
+    const landmassGap = getLandmassGap();
     settings.landmassCount = 1;
     settings.landmassGroupCount = 1;
     settings.distantCount = 1;
-    settings.totalLandmassSize = totalSize * g_HomelandShare;
-    settings.totalDistantSize = totalSize * (1 - g_HomelandShare);
+    settings.totalLandmassSize = totalSize * homelandShare;
+    settings.totalDistantSize = totalSize * (1 - homelandShare);
     const generatorSettings = this.getGenerator().getSettings();
     this.placeSections([this.buildSection(settings, 0, 2 * Math.PI, generatorSettings.landmass[0])]);
     // Put the two landmasses side by side (west / east), on a random side, centered vertically.
@@ -47,9 +58,9 @@ const withHomeland = (Base) => class extends Base {
     const distant = generatorSettings.landmass.find((landmass) => landmass.groupId == 0);
     const homelandRadius = radiusOf(homeland.size);
     const distantRadius = radiusOf(distant.size);
-    const left = 0.5 - (2 * homelandRadius + g_LandmassGap + 2 * distantRadius) / 2;
+    const left = 0.5 - (2 * homelandRadius + landmassGap + 2 * distantRadius) / 2;
     const homelandX = left + homelandRadius;
-    const distantX = left + 2 * homelandRadius + g_LandmassGap + distantRadius;
+    const distantX = left + 2 * homelandRadius + landmassGap + distantRadius;
     const bHomelandWest = RandomImpl.fRand("Homeland West or East") < 0.5;
     homeland.xPos = bHomelandWest ? homelandX : 1 - homelandX;
     distant.xPos = bHomelandWest ? distantX : 1 - distantX;
@@ -106,4 +117,4 @@ function generateHomelandMap(voronoiMap) {
   voronoiScope.end();
 }
 
-export { withHomeland, generateHomelandMap, requestHomelandMapData };
+export { withHomeland, generateHomelandMap, requestHomelandMapData, getHomelandShare };

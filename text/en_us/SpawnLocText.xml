@@ -35,19 +35,37 @@
 			<Text>Continents Homeland (Legacy)</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_MAP_CONTINENTS_HOMELAND_DESCRIPTION">
-			<Text>A large Homeland (two thirds of the land) and smaller Distant Lands (one third). The Distant Lands only get players if there are more than the map size's Homeland slots: on a Small map with 4 players, everyone starts on the Homeland.</Text>
+			<Text>A large Homeland and smaller Distant Lands (see the Homeland Share option). The Distant Lands only get players if there are more than the map size's Homeland slots: on a Small map with 4 players, everyone starts on the Homeland.</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_MAP_CONTINENTS_HOMELAND_VORONOI_NAME">
 			<Text>Continents and Islands (Homeland)</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_MAP_CONTINENTS_HOMELAND_VORONOI_DESCRIPTION">
-			<Text>A large Homeland (two thirds of the land) where every player starts, and smaller empty Distant Lands (one third) to discover in the Exploration Age, accompanied by islands of varying size.</Text>
+			<Text>A large Homeland where every player starts, and smaller empty Distant Lands to discover in the Exploration Age, accompanied by islands of varying size.</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_MAP_HOMELAND_ADRIEN_NAME">
 			<Text>Homeland Adrien</Text>
 		</Row>
 		<Row Tag="LOC_SPAWN_LOC_MAP_HOMELAND_ADRIEN_DESCRIPTION">
 			<Text>Like Continents and Islands (Homeland), but with richer continents in the spirit of Pangaea: deeply indented coasts, many islands close to shore and Mediterranean-like inland seas. Terrain by Adrien.</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HOMELAND_SHARE_NAME">
+			<Text>Homeland Share</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HOMELAND_SHARE_DESCRIPTION">
+			<Text>Share of the land given to the Homeland, where every player starts. The Distant Lands get the rest.</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HOMELAND_LANDMASS_GAP_NAME">
+			<Text>Ocean Between Continents</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HOMELAND_LANDMASS_GAP_DESCRIPTION">
+			<Text>Width of the ocean between the Homeland and the Distant Lands, as a share of the map width.</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HOMELAND_MAP_SCALE_NAME">
+			<Text>Map Scale</Text>
+		</Row>
+		<Row Tag="LOC_SPAWN_LOC_HOMELAND_MAP_SCALE_DESCRIPTION">
+			<Text>Width and height of the map relative to the chosen map size. Land, oceans and continents scale with it.</Text>
 		</Row>
 	</EnglishText>
 </Database>
